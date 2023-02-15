@@ -20,7 +20,7 @@ mongoose
   .then(() => console.log(successMsg('Connected to DB')))
   .catch((error) => console.log(errorMsg(error)))
 
-app.listen(process.env.PORT, 'localhost', (error) => {
+app.listen(process.env.PORT, (error) => {
   error ? console.log(errorMsg(error)) : console.log(successMsg(`listening port ${process.env.PORT}`))
 })
 
